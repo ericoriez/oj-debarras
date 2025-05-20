@@ -9,6 +9,7 @@
           06 23 88 18 77<br/>
           ojdebarras74@exemple.com
         </p>
+
       </div>
       <div>
         <h4>Lieu Intervention</h4>
@@ -17,6 +18,7 @@
           Haute-Savoie <br/>
           Ain<br/>
         </p>
+        <BaseButton class="footer-specific-button" label="Contactez-nous" bgColor="#FEF0C1" />
       </div>
       <div>
         <h4>A propos de nous</h4>
@@ -80,6 +82,11 @@ p {
   color: white;
 }
 
+.footer-specific-button {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 @media (max-width: 768px) {
   .footer-info {
     flex-direction: column;
@@ -93,5 +100,12 @@ p {
     justify-content: center;
     text-align: center;
   }
+  .footer-specific-button {
+    padding: 0.7rem 1rem !important;
+  }
 }
+
+
 </style>
+<script setup lang="ts">
+</script>

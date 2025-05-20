@@ -47,9 +47,6 @@ header {
   margin-right: 0;
   padding: 0.7rem 1rem !important;
 }
-.nav-specific-button {
-  padding: 0.7rem 1rem !important;
-}
 }
 
 </style>
