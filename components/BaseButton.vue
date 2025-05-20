@@ -1,10 +1,7 @@
 <template>
-  <button
-      class="app-button"
-      :style="{ backgroundColor: bgColor }"
-  >
+  <NuxtLink  class="app-button" :style="{ backgroundColor: bgColor }" :to="to">
     {{ label }}
-  </button>
+  </NuxtLink>
 </template>
 
 <script setup>
@@ -20,6 +17,10 @@ defineProps({
   hoverColor: {
     type: String,
     default: '#FAECD6'
+  },
+  to: {
+    type: String,
+    default: '/'
   }
 });
 </script>
@@ -30,10 +31,13 @@ defineProps({
   border-radius: 5px;
   padding: 1rem 4rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  font-family: 'Inter', sans-serif;
   font-size: 1.2rem;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-decoration: none;
+  color: #25424C;
 }
 
 .app-button:hover {

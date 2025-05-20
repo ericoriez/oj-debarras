@@ -5,7 +5,7 @@
 
     <!-- Boutons en haut à droite -->
     <div class="hero-button">
-      <BaseButton class="hero-specific-button" label="Services" bgColor="#B6D0C5" hoverColor="#A0BDAF" />
+      <BaseButton class="hero-specific-button" label="Services" bgColor="#B6D0C5" hoverColor="#A0BDAF"  to="/service" />
       <BaseButton class="hero-specific-button" label="Contact" bgColor="#B6D0C5" hoverColor="#A0BDAF" />
     </div>
 
@@ -36,7 +36,6 @@
   overflow: hidden;
   font-family: 'Alkatra', sans-serif;
   font-weight: 200;
-
 }
 
 .background-image {
@@ -136,6 +135,7 @@ button:hover {
 
   .hero-specific-button {
     padding: 0.7rem 1rem !important;
+    background-color: #FEF0C1 !important;
   }
 }
 

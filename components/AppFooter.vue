@@ -4,10 +4,10 @@
       <div>
         <h4>Coordonnées</h4>
         <p>
-          Nom: <br/>
-          Adresse: <br/>
-          Tel: <br/>
-          Mail:
+          OJ Débarras<br/>
+          Annecy<br/>
+          06 23 88 18 77<br/>
+          ojdebarras74@exemple.com
         </p>
       </div>
       <div>
@@ -59,6 +59,11 @@ footer {
   padding: 0 1rem;
   box-sizing: border-box;
 }
+.footer-info > div:nth-child(2) > p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 p {
   font-size: 16px;
   line-height: 2;
@@ -82,6 +87,11 @@ p {
 
   .footer-info > div {
     margin-bottom: 1rem;
+  }
+  .footer-info p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
 }
 </style>
