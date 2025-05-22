@@ -1,6 +1,7 @@
 <template>
   <div class="contact-container">
     <form @submit.prevent="handleSubmit" class="contact-form">
+
       <div class="form-inner">
         <div class="form-grid">
           <div class="form-group input-item">
@@ -71,6 +72,14 @@
           Envoyer
         </button>
       </div>
+      <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d369879.86766365287!2d6.126706954979967!3d45.82075956203162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b8ffa1c0551c9%3A0x42781681620534ba!2sAnnecy!5e0!3m2!1sfr!2sfr!4v1747924735299!5m2!1sfr!2sfr"
+          width="100%"
+          height="300"
+          style="border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 4px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
     </form>
   </div>
 </template>
@@ -200,7 +209,7 @@ select:focus {
 }
 
 .submit-btn {
-  background: rgba(254, 240, 193, 1);
+  background: rgba(250, 236, 214, 1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -218,6 +227,9 @@ select:focus {
   background: rgba(255, 255, 255, 0.2);
 }
 
+iframe {
+  margin: 20px 0;
+}
 
 @media (max-width: 1024px) {
   .form-grid {
