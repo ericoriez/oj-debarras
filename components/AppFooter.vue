@@ -3,7 +3,7 @@
     <div class="footer-info">
       <div>
         <h4>Coordonnées</h4>
-        <img class="logo" src="@/assets/images/logo-OJDeb.png" alt="Logo" />
+        <img class="logo" src="@/assets/images/logo-OJDeb.png" alt="Logo"/>
         <p>
           OJ Débarras<br/>
           Annecy<br/>
@@ -22,29 +22,32 @@
       <div>
         <h4>Lieux Intervention</h4>
         <div class="localite-container">
-        <p >
-          Savoie <br/>
-          Haute-Savoie <br/>
-          Ain<br/>
-        </p>
+
+          <p>
+            Savoie <br/>
+            Haute-Savoie <br/>
+            Ain<br/>
+          </p>
+          <div class="footer-map-locator">
+          <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79466.86673854114!2d6.125715272665547!3d45.88285895235016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b8ffa1c0551c9%3A0x42781681620534ba!2sAnnecy!5e1!3m2!1sfr!2sfr!4v1747913175002!5m2!1sfr!2sfr"
+              width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
 
       </div>
 
 
-
-
-
     </div>
 
     <div class="footer-signature">
-      <BaseButton class="footer-specific-button" label="Devis-Gratuit" bgColor="#FEF0C1" />
-    <p>&copy; 2025 OJ Débarras</p>
+      <BaseButton class="footer-specific-button" label="Devis-Gratuit" bgColor="#FEF0C1"/>
+      <p>&copy; 2025 OJ Débarras</p>
     </div>
 
   </footer>
 </template>
-
 
 
 <style scoped>
@@ -52,6 +55,7 @@
   width: 100px;
   height: 100px;
 }
+
 footer {
   background-color: #6DA48F80;
   color: #25424C;
@@ -72,12 +76,16 @@ footer {
   box-sizing: border-box;
 }
 
-.localite-container{
+.localite-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
+.localite-container > p {
+  margin: 0;
+}
+
+
 p {
   font-size: 24px;
   line-height: 2;
@@ -94,6 +102,7 @@ p {
   font-family: 'Inter', sans-serif;
   color: white;
 }
+
 .footer-signature > p {
   font-size: 14px;
 }
@@ -102,7 +111,11 @@ p {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-
+@media (max-width: 1024px) {
+  .footer-info {
+    flex-direction: column;
+  }
+}
 @media (max-width: 768px) {
   .footer-info {
     flex-direction: column;
@@ -111,11 +124,13 @@ p {
   .footer-info > div {
     margin-bottom: 1rem;
   }
+
   .footer-info p {
     display: flex;
     justify-content: center;
     text-align: center;
   }
+
   .footer-specific-button {
     padding: 0.7rem 1rem !important;
   }
