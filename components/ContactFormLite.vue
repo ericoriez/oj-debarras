@@ -12,7 +12,7 @@
         </div>
 
         <div class="form-group input-item">
-          <input type="text" id="phone" v-model="formData.phone" required placeholder="Telephone*">
+          <input type="tel" id="phone" v-model="formData.phone" required placeholder="Telephone*">
         </div>
 
         <button type="submit" class="submit-btn input-item">

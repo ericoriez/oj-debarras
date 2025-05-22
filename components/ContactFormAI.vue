@@ -117,7 +117,7 @@ export default {
         formData.append('access_key', 'cc706538-1781-4f64-be1b-374cddd8512d');
         formData.append('from_name', `${this.formData.firstname} ${this.formData.lastname}`);
         formData.append('email', this.formData.email);
-        formData.append('subject', `Demande de Contact - ${this.formData.clientType}`);
+        formData.append('subject', `Demande de Devis - ${this.formData.firstname} - ${this.formData.clientType} - ${this.formData.interventionType}`);
         formData.append('message', this.formData.message);
         formData.append('Téléphone', this.formData.phone);
         formData.append('Type de client', this.formData.clientType);
@@ -221,10 +221,13 @@ select:focus {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding: 12px;
+  font-weight: bold;
+
 }
 
 .submit-btn:hover {
-  background: rgba(255, 255, 255, 0.2);
+    background: #D2B48C;
 }
 
 iframe {

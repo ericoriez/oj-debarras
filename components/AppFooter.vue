@@ -13,7 +13,7 @@
 
       </div>
       <div>
-        <h4>On vous rappel</h4>
+        <h4>On vous rappelle</h4>
         <div>
           <ContactFormLite/>
         </div>

@@ -29,7 +29,7 @@
   overflow: hidden;
   font-family: 'Alkatra', sans-serif;
   font-weight: 200;
-  margin-top: 2%;
+
 }
 .background-image {
   position: absolute;
@@ -70,7 +70,7 @@ h1 {
 
 h2 {
   font-size: 3rem;
-  margin-bottom: 1rem;
+
   font-family: 'Alkatra', sans-serif;
   font-weight: 200;
 }
