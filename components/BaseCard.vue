@@ -32,11 +32,14 @@ export default {
   flex-direction: column;
   align-items: center;
   margin: 10px;
+
 }
 
 .base-card img {
   height: 250px;
   object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: width 0.3s ease-in-out;
 }
 
 .base-card h4 {

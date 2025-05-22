@@ -4,15 +4,25 @@
   <div class="example-section">
     <h1>Exemples d’interventions </h1>
     <div class="cards-container">
+      <div class="cards-style">
       <BaseCard
-          v-for="(card, index) in cards"
+          v-for="(card, index) in cards1"
+          :key="index"
+          :title="card.title"
+          :imageSrc="card.imageSrc"
+          :imageWidth="imageWidth"
+      />
+        </div>
+<div class="cards-style">
+      <BaseCard
+          v-for="(card, index) in cards2"
           :key="index"
           :title="card.title"
           :imageSrc="card.imageSrc"
           :imageWidth="imageWidth"
       />
     </div>
-
+    </div>
   </div>
 </template>
 
@@ -39,9 +49,12 @@
   justify-content: center;
   gap: 20px;
 }
+.cards-style {
+  border: 1px solid #24424A;
+}
 </style>
 
-<script >
+<script setup >
 import BaseCard from "~/components/BaseCard.vue";
 
 import maison from "@/assets/images/ex-img-1.png";
@@ -50,20 +63,27 @@ import locaux from "@/assets/images/ex-img-3.png";
 import bureaux from "@/assets/images/ex-img-4.png";
 
 
-export default {
-  components: {
-    BaseCard
-  },
-  data() {
-    return {
-      imageWidth: '250px',
-      cards: [
-        { title: 'Maison', imageSrc: maison },
-        { title: 'Appartement', imageSrc: appartement },
-        { title: 'Locaux Commerciaux', imageSrc: locaux },
-        { title: 'Bureaux', imageSrc: bureaux }
-      ]
-    }
-  }
+const imageWidth = ref('60vh')
+
+const updateImageWidth = () => {
+  imageWidth.value = window.innerWidth < 600 ? '30vh' : '60vh'
 }
+
+onMounted(() => {
+  updateImageWidth()
+  window.addEventListener('resize', updateImageWidth)
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', updateImageWidth)
+})
+
+const cards1 = [
+  { title: 'Avant', imageSrc: maison },
+  { title: 'Après', imageSrc: appartement }
+]
+const cards2 = [
+  { title: 'Avant', imageSrc: locaux },
+  { title: 'Après', imageSrc: bureaux }
+]
 </script>

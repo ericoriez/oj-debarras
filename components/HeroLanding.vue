@@ -36,6 +36,7 @@
   overflow: hidden;
   font-family: 'Alkatra', sans-serif;
   font-weight: 200;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .background-image {
@@ -69,11 +70,13 @@
   overflow-y: auto;
   font-family: 'Alkatra', sans-serif;
   font-weight: 200;
+  transition: width 0.3s ease-in-out;
 }
 
 .logo {
   height: 300px;
   margin: 5rem 0;
+
 }
 
 h1 {

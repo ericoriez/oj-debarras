@@ -3,6 +3,7 @@
     <div class="footer-info">
       <div>
         <h4>Coordonnées</h4>
+        <img class="logo" src="@/assets/images/logo-OJDeb.png" alt="Logo" />
         <p>
           OJ Débarras<br/>
           Annecy<br/>
@@ -12,27 +13,32 @@
 
       </div>
       <div>
-        <h4>Lieu Intervention</h4>
-        <p>
+        <h4>On vous rappel</h4>
+        <div>
+          <ContactFormLite/>
+        </div>
+      </div>
+
+      <div>
+        <h4>Lieux Intervention</h4>
+        <div class="localite-container">
+        <p >
           Savoie <br/>
           Haute-Savoie <br/>
           Ain<br/>
         </p>
-        <BaseButton class="footer-specific-button" label="Contactez-nous" bgColor="#FEF0C1" />
-      </div>
-      <div>
-        <h4>A propos de nous</h4>
-        <p>
-          Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit.
-          Proin in vehicula leo, porta finibus velit.
-          Etiam vehicula venenatis auctor.
+        </div>
 
-        </p>
       </div>
+
+
+
+
+
     </div>
 
     <div class="footer-signature">
+      <BaseButton class="footer-specific-button" label="Devis-Gratuit" bgColor="#FEF0C1" />
     <p>&copy; 2025 OJ Débarras</p>
     </div>
 
@@ -42,6 +48,10 @@
 
 
 <style scoped>
+.logo {
+  width: 100px;
+  height: 100px;
+}
 footer {
   background-color: #6DA48F80;
   color: #25424C;
@@ -61,25 +71,31 @@ footer {
   padding: 0 1rem;
   box-sizing: border-box;
 }
-.footer-info > div:nth-child(2) > p {
+
+.localite-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+p {
+  font-size: 24px;
+  line-height: 2;
   display: flex;
   justify-content: center;
   text-align: center;
 }
-p {
-  font-size: 16px;
-  line-height: 2;
-  display: flex;
-  justify-content: flex-start;
-  text-align: left;
-}
 
 .footer-signature {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  font-size: medium;
   font-family: 'Inter', sans-serif;
   color: white;
+}
+.footer-signature > p {
+  font-size: 14px;
 }
 
 .footer-specific-button {
@@ -107,5 +123,3 @@ p {
 
 
 </style>
-<script setup lang="ts">
-</script>
