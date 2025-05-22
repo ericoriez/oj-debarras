@@ -6,7 +6,7 @@
     <!-- Boutons en haut à droite -->
     <div class="hero-button">
       <BaseButton class="hero-specific-button" label="Services" bgColor="#B6D0C5" hoverColor="#A0BDAF"  to="/service" />
-      <BaseButton class="hero-specific-button" label="Contact" bgColor="#B6D0C5" hoverColor="#A0BDAF" />
+      <BaseButton class="hero-specific-button" label="Contact" bgColor="#B6D0C5" hoverColor="#A0BDAF" to="/contact" />
     </div>
 
     <div class="hero-content">

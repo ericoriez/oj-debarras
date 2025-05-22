@@ -8,11 +8,10 @@
     <div class="hero-content">
       <img class="logo" src="@/assets/images/logo-OJDeb.png" alt="Logo" />
       <h1>Nos Prestations</h1>
-      <button>Tel: 06 23 88 18 77</button>
     </div>
   </div>
   <div class="intro-section">
-    <h1>Pour quelles interventions ?</h1>
+    <h2>Pour quelles interventions ?</h2>
     <p>OJ Débarras : Votre partenaire pour un débarras écologique et responsable !
       <br>Nous vidons maisons, bureaux, garages et greniers, même lors de successions,
       avec un engagement fort pour l’écologie. Recyclage, revalorisation
@@ -64,7 +63,13 @@
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 5rem;
+  font-family: 'Alkatra', sans-serif;
+  font-weight: 200;
+}
+
+h2 {
+  font-size: 3rem;
   margin-bottom: 1rem;
   font-family: 'Alkatra', sans-serif;
   font-weight: 200;

@@ -12,11 +12,11 @@
         </div>
 
         <div class="form-group input-item">
-          <input type="email" id="phone" v-model="formData.phone" required placeholder="Telephone*">
+          <input type="text" id="phone" v-model="formData.phone" required placeholder="Telephone*">
         </div>
 
         <button type="submit" class="submit-btn input-item">
-          Etre-Rappelé
+          Rappellez-moi !
         </button>
       </div>
     </form>
@@ -49,8 +49,8 @@ export default {
         formData.append('access_key', 'cc706538-1781-4f64-be1b-374cddd8512d');
         formData.append('from_name', this.formData.name);
         formData.append('email', this.formData.email);
-        formData.append('subject', `Message de ${this.formData.name} - ${this.formData.phone}`);
-        formData.append('message', "Rappellez-moi, Merci.");
+        formData.append('subject', `Site OJ-Debarras: Demande de Rappel de ${this.formData.name} - ${this.formData.phone}`);
+        formData.append('message', `Bonjour, J'aurais besoin de renseignements pour un débarras.\nNuméro de téléphone : ${this.formData.phone}`);
 
 
         console.log('Envoi des données...', Object.fromEntries(formData));
@@ -95,6 +95,7 @@ export default {
   width: 100%;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 2px;
+  border: 1px solid #6DA48F;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1),
   0 0 0 1px rgba(255, 255, 255, 0.274);
@@ -149,16 +150,18 @@ textarea:focus {
 .submit-btn {
   width: 100%;
   padding: 12px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(254, 240, 193, 1);
   border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   color: inherit;
   cursor: pointer;
   transition: background 0.3s ease;
+  font-size: 24px;
 }
 
 .submit-btn:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(210, 180, 140, 1) ;
 }
 
 </style>
