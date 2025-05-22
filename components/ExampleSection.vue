@@ -48,9 +48,14 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  transition: transform 0.5s ease;
+}
+.cards-container:hover{
+  transform: scale(1.05);
 }
 .cards-style {
   border: 1px solid #24424A;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 </style>
 

@@ -215,7 +215,7 @@ select:focus {
   border-radius: 4px;
   color: inherit;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.5s ease;
   font-size: 24px;
   margin-top: 20px;
   display: block;
@@ -228,6 +228,7 @@ select:focus {
 
 .submit-btn:hover {
     background: #D2B48C;
+  transform: scale(1.05);
 }
 
 iframe {

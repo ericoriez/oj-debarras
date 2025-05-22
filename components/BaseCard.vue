@@ -35,11 +35,16 @@ export default {
 
 }
 
+.base-card img:hover {
+  transform: scale(1.05);
+}
+
 .base-card img {
   height: 250px;
   object-fit: cover;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  transition: width 0.3s ease-in-out;
+  transition: transform 0.5s ease;
+
 }
 
 .base-card h4 {

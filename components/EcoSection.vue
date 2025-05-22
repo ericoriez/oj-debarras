@@ -36,6 +36,13 @@ h1 {
   text-align: center;
 }
 
+.eco-section img {
+  transition: transform 0.5s ease;
+}
+.eco-section img:hover {
+  transform: scale(1.05);
+}
+
 .eco-text {
   width: 50%;
 }

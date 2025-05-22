@@ -34,6 +34,7 @@
       </p>
     </div>
   </div>
+  <BaselogoLite/>
 </template>
 
 <style scoped>

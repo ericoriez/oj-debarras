@@ -27,6 +27,7 @@
 .hero-specific-button:hover {
   background-color: #A0BDAF !important;
   opacity: 1 !important;
+
 }
 
 .hero-section {
@@ -37,6 +38,7 @@
   font-family: 'Alkatra', sans-serif;
   font-weight: 200;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  color:#24424A;
 }
 
 .background-image {
@@ -96,11 +98,13 @@ button {
   border-radius: 5px;
   border: none;
   margin-bottom: 3rem;
+  transition: transform 0.5s ease;
 }
 
 button:hover {
   background-color: #A0BDAF;
   opacity: 1;
+  transform: scale(1.05);
 }
 
 .hero-info {

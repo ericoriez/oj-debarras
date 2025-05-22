@@ -35,13 +35,14 @@ defineProps({
   font-size: 1.2rem;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease;
   text-decoration: none;
   color: #25424C;
+  transition: transform 0.5s ease, background-color 0.3s ease;
 }
 
 .app-button:hover {
   background-color: v-bind(hoverColor);
+  transform: scale(1.05);
 }
 </style>
 

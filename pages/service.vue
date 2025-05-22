@@ -1,15 +1,15 @@
-<script setup lang="ts">
 
-</script>
 
 <template>
   <div class="hero-section">
-    <img src="@/assets/images/ex-img-1.png" alt="hero-images" class="background-image" />
+    <img src="@/assets/images/ex-img-1.png" alt="hero-images" class="background-image"/>
     <div class="hero-content">
-      <img class="logo" src="@/assets/images/logo-OJDeb.png" alt="Logo" />
+      <img class="logo" src="@/assets/images/logo-OJDeb.png" alt="Logo"/>
       <h1>Nos Prestations</h1>
     </div>
   </div>
+
+
   <div class="intro-section">
     <h2>Pour quelles interventions ?</h2>
     <p>OJ Débarras : Votre partenaire pour un débarras écologique et responsable !
@@ -19,9 +19,72 @@
       l’environnement.
       <br>Simplifiez vos débarras, contactez-nous dès aujourd'hui pour un devis gratuit !</p>
   </div>
+
+  <div class="cards-container">
+    <BaseDetailedCard
+        v-for="(card, index) in cards"
+        :key="index"
+        :title="card.title"
+        :imageSrc="card.imageSrc"
+        :text="card.text"
+        :imageWidth="imageWidth"
+    />
+  </div>
+
+  <ExampleSection/>
+  <BaselogoLite/>
 </template>
 
+<script>
+import BaseDetailedCard from "~/components/BaseCard.vue";
+
+import maison from "@/assets/images/maison.png";
+import appartement from "@/assets/images/appartement.png";
+import locaux from "@/assets/images/locaux.png";
+import bureaux from "@/assets/images/bureaux.png";
+import entrepots from "@/assets/images/entrepots.png";
+
+export default {
+  components: {
+    BaseDetailedCard
+  },
+  data() {
+    return {
+      imageWidth: '250px',
+      cards: [
+        {
+          title: 'Maison',
+          imageSrc: maison,
+          text: 'Nous intervenons pour vider complètement ou partiellement votre maison, que ce soit à la suite d’un déménagement, d’une succession ou d’une rénovation. Nous assurons un tri écoresponsable et un recyclage optimal des objets et encombrants.'
+        },
+        {
+          title: 'Appartement',
+          imageSrc: appartement,
+          text: 'Débarras d’appartements en étage avec ou sans ascenseur. Nous prenons en charge l’évacuation de meubles, électroménagers et déchets, tout en respectant les parties communes et la copropriété.'
+        },
+        {
+          title: 'Locaux Commerciaux',
+          imageSrc: locaux,
+          text: 'Nous proposons un service rapide et efficace de débarras pour vos magasins, boutiques ou espaces commerciaux, que ce soit avant une fermeture, une reprise ou une rénovation. Valorisation du mobilier possible.'
+        },
+        {
+          title: 'Bureaux',
+          imageSrc: bureaux,
+          text: 'Débarras de bureaux professionnels, open spaces ou salles de réunion. Nous assurons le démontage du mobilier, le recyclage du matériel informatique et le respect des délais pour ne pas perturber votre activité.'
+        },
+        {
+          title: 'Entrepôt / Usine',
+          imageSrc: entrepots,
+          text: 'Intervention sur des sites industriels ou entrepôts pour évacuer machines, palettes, archives, gravats ou encombrants divers. Nous proposons également un service de tri, recyclage et destruction sécurisée.'
+        }
+      ]
+    }
+  }
+}
+</script>
+
 <style scoped>
+
 .hero-section {
   position: relative;
   width: 100%;
@@ -29,8 +92,8 @@
   overflow: hidden;
   font-family: 'Alkatra', sans-serif;
   font-weight: 200;
-
 }
+
 .background-image {
   position: absolute;
   top: 0;
@@ -106,11 +169,23 @@ button:hover {
   text-align: center;
 }
 
+.cards-container {
+  background-color: #6DA48F80;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding-top: 2%;
+  margin-bottom: 5%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
 @media (max-width: 768px) {
   .hero-content {
     padding: 2rem;
     gap: 2rem;
   }
+
   .intro-section {
     padding: 5% 5%;
   }

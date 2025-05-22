@@ -156,12 +156,13 @@ textarea:focus {
   border-radius: 4px;
   color: inherit;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: transform 0.5s ease, background 0.3s ease;
   font-size: 24px;
 }
 
 .submit-btn:hover {
   background: rgba(210, 180, 140, 1) ;
+  transform: scale(1.05);
 }
 
 </style>
