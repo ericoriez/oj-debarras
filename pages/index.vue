@@ -9,6 +9,7 @@
 <EcoSection/>
   <!--Exemples-->
  <ExampleSection/>
+  <BaselogoLite/>
 </template>/
 
 
