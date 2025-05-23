@@ -16,9 +16,8 @@
 </template>
 
 <style scoped>
-h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+h4 {
+  font-family: 'Alkatra', sans-serif;
 }
 
 

@@ -23,10 +23,10 @@ import {NotebookPen} from 'lucide-vue-next'
       </div>
     </div>
     <div class="header-cta-band-button-container">
-      <button class="header-cta-band-button">
+      <NuxtLink to="/contact" class="header-cta-band-button">
         <NotebookPen />
         Devis Gratuit
-      </button>
+      </NuxtLink>
     </div>
   </div>
 </template>
@@ -93,9 +93,6 @@ import {NotebookPen} from 'lucide-vue-next'
   align-items: center;
   text-align: center;
   gap: 5px;
-}
-
-button {
   text-decoration: none;
   border: none;
   background: #ff4444;
@@ -107,7 +104,8 @@ button {
   border-radius: 2px;
 }
 
-button:hover {
+
+.header-cta-band-button:hover {
   background: #ff6666;
   transform: scale(1.05);
 }
@@ -124,7 +122,7 @@ button:hover {
   .header-cta-band-contact-mail {
     display: none;
   }
- button {
+  .header-cta-band-button {
    padding: 5px 10px;
  }
 }

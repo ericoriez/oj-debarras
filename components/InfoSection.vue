@@ -28,6 +28,9 @@
   width: 150px;
   height: 150px;
 }
+h1, h3 {
+  font-family: 'Alkatra', sans-serif;
+}
 
 .intro-container {
   text-align: center;

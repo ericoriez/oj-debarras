@@ -202,6 +202,13 @@ p {
     padding: 0.7rem 1rem !important;
   }
 }
+@media (max-width: 550px) {
+  .footer-signature-container {
+    display: flex;
+    flex-direction: column;
+
+  }
+}
 </style>
 <script setup lang="ts">
 </script>

@@ -1,5 +1,3 @@
-
-
 <template>
   <div class="example-section">
     <h1>Exemples d’interventions </h1>
@@ -27,7 +25,9 @@
 </template>
 
 <style scoped>
-
+h1, h3 {
+  font-family: 'Alkatra', sans-serif;
+}
 
 .example-section {
   font-family: 'Inter', sans-serif;

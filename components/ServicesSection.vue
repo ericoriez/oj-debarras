@@ -24,7 +24,9 @@
 </template>
 
 <style scoped>
-
+h1, h3 {
+  font-family: 'Alkatra', sans-serif;
+}
 .service-text-container {
   width: 80%;
 }
