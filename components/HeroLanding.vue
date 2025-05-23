@@ -1,23 +1,28 @@
-
 <template>
+  <BaseCtaOverHeader/>
   <div class="hero-section">
-    <img src="@/assets/images/HERO-landing.png" alt="hero-images" class="background-image" />
+    <img src="@/assets/images/HERO-landing.png" alt="hero-images" class="background-image"/>
 
     <!-- Boutons en haut à droite -->
     <div class="hero-button">
-      <BaseButton class="hero-specific-button" label="Services" bgColor="#B6D0C5" hoverColor="#A0BDAF"  to="/service" />
-      <BaseButton class="hero-specific-button" label="Contact" bgColor="#B6D0C5" hoverColor="#A0BDAF" to="/contact" />
+      <BaseButton class="hero-specific-button" label="Services" bgColor="#B6D0C5" hoverColor="#A0BDAF" to="/service"/>
+      <BaseButton class="hero-specific-button" label="Contact" bgColor="#B6D0C5" hoverColor="#A0BDAF" to="/contact"/>
     </div>
 
     <div class="hero-content">
-      <img class="logo" src="@/assets/images/logo-OJDeb.png" alt="Logo" />
+      <img class="logo" src="@/assets/images/logo-OJDeb.png" alt="Logo"/>
       <h1>Débarrassez-vous de vos encombrants avec OJ Débarras</h1>
       <div class="hero-info">
         <h1>Devis gratuit</h1>
         <h1>Intervention Rapide</h1>
       </div>
-      <button>Tel: 06 23 88 18 77</button>
-      <h1>HAUTE-SAVOIE - SAVOIE - AIN</h1>
+      <button>
+        <PhoneOutgoing
+            :size="20"
+        />
+        <a href="tel:0623881877">Tel: 06 23 88 18 77</a>
+      </button>
+
     </div>
   </div>
 </template>
@@ -38,7 +43,7 @@
   font-family: 'Alkatra', sans-serif;
   font-weight: 200;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  color:#24424A;
+  color: #24424A;
 }
 
 .background-image {
@@ -89,6 +94,11 @@ h1 {
 }
 
 button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
   background-color: #B6D0C5;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   padding: 1rem 2rem;
@@ -99,6 +109,10 @@ button {
   border: none;
   margin-bottom: 3rem;
   transition: transform 0.5s ease;
+}
+button a {
+    color: inherit;
+    text-decoration: none;
 }
 
 button:hover {
@@ -111,7 +125,7 @@ button:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 10%;
   width: 100%;
   margin-bottom: 3rem;
   font-family: 'Alkatra', sans-serif;
@@ -120,10 +134,10 @@ button:hover {
 
 /* 📱 Responsive */
 @media (max-width: 768px) {
-.logo {
-  height: 200px;
-  margin: 3rem 0;
-}
+  .logo {
+    height: 200px;
+    margin: 3rem 0;
+  }
 
   .hero-info h1 {
     font-size: 1.2rem;
@@ -136,7 +150,7 @@ button:hover {
     padding: 0 1rem;
     box-sizing: border-box;
     position: fixed;
-    top: 1rem;
+    top: 60px;
     left: 0;
   }
 
@@ -148,3 +162,6 @@ button:hover {
 
 
 </style>
+<script setup lang="ts">
+import {PhoneOutgoing} from "lucide-vue-next";
+</script>

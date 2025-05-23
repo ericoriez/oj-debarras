@@ -49,6 +49,13 @@
   justify-content: center;
   gap: 20px;
 }
+
+@media (max-width: 450px) {
+.service-section {
+    padding: 1% 1%;
+  gap: 0.5rem;
+  }
+}
 </style>
 
 <script>

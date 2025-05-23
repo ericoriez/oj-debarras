@@ -102,7 +102,7 @@ button {
   color: #FEF0C1;
   cursor: pointer;
   transition: transform 0.5s ease, background-color 0.3s ease;
- padding: 10px 20px;
+  padding: 10px 20px;
   font-size: 18px;
   border-radius: 2px;
 }
@@ -124,5 +124,8 @@ button:hover {
   .header-cta-band-contact-mail {
     display: none;
   }
+ button {
+   padding: 5px 10px;
+ }
 }
 </style>

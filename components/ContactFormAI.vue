@@ -245,5 +245,8 @@ iframe {
   .form-grid {
     grid-template-columns: 1fr;
   }
+  .contact-form {
+    padding: 10px;
+  }
 }
 </style>

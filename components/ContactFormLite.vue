@@ -165,4 +165,14 @@ textarea:focus {
   transform: scale(1.05);
 }
 
+@media (max-width: 600px) {
+  .contact-form {
+    padding: 20px;
+  }
+  .contact-container  {
+    padding: 10px;
+  }
+
+}
+
 </style>

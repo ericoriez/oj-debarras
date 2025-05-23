@@ -3,14 +3,21 @@
     <div class="footer-info">
       <div>
         <h4>Coordonnées</h4>
-        <img class="logo" src="@/assets/images/logo-OJDeb.png" alt="Logo"/>
+        <NuxtLink to="/">
+          <img
+              class="logo"
+              src="@/assets/images/logo-OJDeb.png"
+              alt="Logo"
+          />
+        </NuxtLink>
         <p>
           OJ Débarras<br/>
           Annecy<br/>
-          06 23 88 18 77<br/>
-          ojdebarras74@exemple.com
         </p>
-
+        <div class="footer-info-contact">
+          <a href="tel:0623881877">Tel: 06 23 88 18 77</a>
+          <a href="mailto:o-jdebarras@hotmail.fr">o-jdebarras@hotmail.fr</a>
+        </div>
       </div>
       <div>
         <h4>On vous rappelle</h4>
@@ -18,7 +25,6 @@
           <ContactFormLite/>
         </div>
       </div>
-
       <div>
         <h4>Lieux Intervention</h4>
         <div class="localite-container">
@@ -28,26 +34,29 @@
             Ain<br/>
           </p>
           <div class="footer-map-locator">
-          <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79466.86673854114!2d6.125715272665547!3d45.88285895235016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b8ffa1c0551c9%3A0x42781681620534ba!2sAnnecy!5e1!3m2!1sfr!2sfr!4v1747913175002!5m2!1sfr!2sfr"
-              width="300"
-              height="250"
-              style="border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 4px;"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79466.86673854114!2d6.125715272665547!3d45.88285895235016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b8ffa1c0551c9%3A0x42781681620534ba!2sAnnecy!5e1!3m2!1sfr!2sfr!4v1747913175002!5m2!1sfr!2sfr"
+                width="300"
+                height="250"
+                style="border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 4px;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
-
       </div>
-
-
     </div>
-
-    <div class="footer-signature">
-      <BaseButton class="footer-specific-button" label="Devis-Gratuit" bgColor="#FEF0C1"/>
-      <p>&copy; 2025 OJ Débarras</p>
-    </div>
+      <div class="footer-signature">
+        <BaseButton class="footer-specific-button" label="Devis-Gratuit" bgColor="#FEF0C1" to="/contact"/>
+        <div class="footer-signature-container">
+          <p>&copy; 2025 OJ Débarras – Tous droits réservés</p>
+          <p>Réalisation :
+            <a href="https://cv-rod.vercel.app/" target="_blank" rel="noopener noreferrer">R.Delory  </a>
+            <span class="separator">|</span>
+            <a href="https://www.linkedin.com/in/eric-oriez/" target="_blank" rel="noopener noreferrer">  E.Oriez</a>
+          </p>
+        </div>
+      </div>
 
   </footer>
 </template>
@@ -63,7 +72,7 @@ footer {
   background-color: #6DA48F80;
   color: #25424C;
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
 }
 
 .footer-info {
@@ -84,12 +93,26 @@ footer {
   flex-direction: column;
   justify-content: center;
 }
+
 .localite-container > p {
   margin: 0;
   font-size: 14px;
   font-weight: bold;
 }
-
+.footer-info-contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.footer-info-contact > a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+}
+h4 {
+  font-family: 'Alkatra', sans-serif;
+}
 
 p {
   font-size: 24px;
@@ -108,18 +131,47 @@ p {
   color: white;
 }
 
-.footer-signature > p {
+.footer-info p:first-of-type {
+  font-weight: bold;
+}
+.footer-signature-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  width: 100%;
+}
+.footer-signature-container > p > a {
+  display: inline-block;
+  gap: 1rem;
+  color: inherit;
+  text-decoration: none;
+  margin: 0 5px;
+}
+.footer-signature-container a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+.footer-signature-container .separator {
+  margin: 0 5px;
+  color: #999;
+}
+.footer-signature-container > p {
   font-size: 14px;
+  margin: 0;
 }
 
 .footer-specific-button {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
 .footer-specific-button:hover {
   background-color: #D2B48C !important;
   opacity: 1 !important;
 }
+
 @media (max-width: 1024px) {
   .footer-info {
     flex-direction: column;
@@ -129,9 +181,11 @@ p {
     gap: 1%;
   }
 }
+
 @media (max-width: 768px) {
   .footer-info {
     flex-direction: column;
+
   }
 
   .footer-info > div {
@@ -149,3 +203,5 @@ p {
   }
 }
 </style>
+<script setup lang="ts">
+</script>
