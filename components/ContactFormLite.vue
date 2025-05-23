@@ -71,7 +71,8 @@ export default {
             email: ''
           };
         } else {
-          throw new Error(data.message || 'Erreur lors de l\'envoi');
+          alert("Erreur lors de l'envoi : " + (data.message || 'Veuillez réessayer.'));
+          console.error(data.message);
         }
       } catch (error) {
         console.error('Erreur détaillée:', error);
@@ -96,7 +97,6 @@ export default {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 2px;
   border: 1px solid #6DA48F;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1),
   0 0 0 1px rgba(255, 255, 255, 0.274);
   padding: 30px;
@@ -121,9 +121,7 @@ label {
   font-weight: bold;
 }
 
-label.optional::after {
-  content: "";
-}
+
 
 label::after {
   content: " *";

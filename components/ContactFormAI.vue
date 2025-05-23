@@ -145,7 +145,8 @@ export default {
             urgency: ''
           };
         } else {
-          throw new Error(data.message || 'Erreur lors de l\'envoi');
+          alert("Erreur lors de l'envoi : " + (data.message || 'Veuillez réessayer.'));
+          console.error(data.message);
         }
       } catch (error) {
         alert('Une erreur est survenue. Veuillez réessayer.');
