@@ -12,14 +12,14 @@ import {NotebookPen} from 'lucide-vue-next'
             color="#ff4444"
             :size="20"
         />
-        <p>o-jdebarras@hotmail.fr</p>
+        <a href="mailto:o-jdebarras@hotmail.fr">o-jdebarras@hotmail.fr</a>
       </div>
       <div class="header-cta-band-contact-phone">
         <PhoneOutgoing
             color="#ff4444"
             :size="20"
         />
-        <p>Tel: 06 23 88 18 77</p>
+        <a href="tel:0623881877">Tel: 06 23 88 18 77</a>
       </div>
     </div>
     <div class="header-cta-band-button-container">
@@ -65,6 +65,11 @@ import {NotebookPen} from 'lucide-vue-next'
   padding: 0 10px;
   font-family: 'Inter', sans-serif;
   color: #D2B48C;
+}
+.header-cta-band-contact-mail a,
+.header-cta-band-contact-phone a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .header-cta-band-contact-phone {
