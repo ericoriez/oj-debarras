@@ -40,9 +40,9 @@ This site has been built intentionally with **pure CSS** instead of utility fram
 src/
 ├── assets/ # Images and icons
 ├── components/ # Vue components (ContactForm, Testimonials, etc.)
-├── views/ # Main pages (Home, Contact, etc.)
-├── App.vue # Main layout wrapper
-└── main.js # Entry point
+├── layouts/ # Header and Footer 
+├── pages/ # Main pages (index, contact, etc.)
+└── App.vue # Main layout wrapper
 ```
 
 ## 📱 Responsiveness
