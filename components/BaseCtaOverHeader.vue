@@ -2,6 +2,8 @@
 import {Send} from 'lucide-vue-next'
 import {PhoneOutgoing} from 'lucide-vue-next'
 import {NotebookPen} from 'lucide-vue-next'
+import {Map} from 'lucide-vue-next';
+
 </script>
 
 <template>
@@ -20,6 +22,13 @@ import {NotebookPen} from 'lucide-vue-next'
             :size="20"
         />
         <a href="tel:0623881877">Tel: 06 23 88 18 77</a>
+      </div>
+      <div class="header-cta-band-contact-locator">
+        <Map
+            color="#ff4444"
+            :size="20"
+        />
+        <p>Haute Savoie | Savoie | Ain | Geneve</p>
       </div>
     </div>
     <div class="header-cta-band-button-container">
@@ -82,6 +91,16 @@ import {NotebookPen} from 'lucide-vue-next'
   font-family: 'Inter', sans-serif;
   color: #D2B48C;
 }
+.header-cta-band-contact-locator{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+  padding: 0 10px;
+  font-family: 'Inter', sans-serif;
+  color: #D2B48C;
+}
 
 .header-cta-band-button-container {
   padding: 0;
@@ -118,12 +137,18 @@ import {NotebookPen} from 'lucide-vue-next'
   }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 1110px) {
   .header-cta-band-contact-mail {
     display: none;
   }
   .header-cta-band-button {
    padding: 5px 10px;
  }
+}
+
+@media (max-width: 800px) {
+  .header-cta-band-contact-locator {
+    display: none;
+  }
 }
 </style>
