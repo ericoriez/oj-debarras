@@ -1,5 +1,3 @@
-
-
 <template>
   <div class="hero-section">
     <img src="@/assets/images/ex-img-1.png" alt="hero-images" class="background-image"/>
@@ -188,6 +186,11 @@ button:hover {
 
   .intro-section {
     padding: 5% 5%;
+  }
+}
+@media (max-width: 425px) {
+  h1 {
+    font-size: 3rem;
   }
 }
 </style>

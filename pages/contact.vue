@@ -139,4 +139,17 @@ button:hover {
     padding: 5% 5%;
   }
 }
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+.intro-section {
+  gap: 0;
+}
+
+h2 {
+  margin-bottom: 0;
+}
 </style>
