@@ -38,7 +38,7 @@
 .hero-section {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   font-family: 'Alkatra', sans-serif;
   font-weight: 200;
