@@ -11,22 +11,20 @@
       </p>
     </div>
     <div class="cards-container">
-      <BaseCard
-          v-for="(card, index) in cards"
-          :key="index"
-          :title="card.title"
-          :imageSrc="card.imageSrc"
-          :imageWidth="imageWidth"
-      />
+      <BaseCard v-for="(card, index) in cards" :key="index" :title="card.title" :imageSrc="card.imageSrc"
+        :imageWidth="imageWidth" />
     </div>
 
   </div>
 </template>
 
 <style scoped>
-h1, h3 {
+h1,
+h3 {
   font-family: 'Alkatra', sans-serif;
+margin-bottom: 0;
 }
+
 .service-text-container {
   width: 80%;
 }
@@ -53,9 +51,9 @@ h1, h3 {
 }
 
 @media (max-width: 450px) {
-.service-section {
+  .service-section {
     padding: 1% 1%;
-  gap: 0.5rem;
+    gap: 0.5rem;
   }
 }
 </style>
@@ -77,11 +75,11 @@ export default {
     return {
       imageWidth: '250px',
       cards: [
-        {title: 'Maison', imageSrc: maison},
-        {title: 'Appartement', imageSrc: appartement},
-        {title: 'Locaux Commerciaux', imageSrc: locaux},
-        {title: 'Bureaux', imageSrc: bureaux},
-        {title: 'Entrepot/Usine', imageSrc: entrepots}
+        { title: 'Maison', imageSrc: maison },
+        { title: 'Appartement', imageSrc: appartement },
+        { title: 'Locaux Commerciaux', imageSrc: locaux },
+        { title: 'Bureaux', imageSrc: bureaux },
+        { title: 'Entrepot/Usine', imageSrc: entrepots }
       ]
     }
   }
