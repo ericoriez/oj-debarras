@@ -81,14 +81,16 @@ footer {
   padding: 0 1rem;
   box-sizing: border-box;
 }
+
 .footer-info-container {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 2px;
   border: 1px solid #6DA48F;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1),
     0 0 0 1px rgba(255, 255, 255, 0.274);
-    padding:10px;
+  padding: 10px;
 }
+
 .localite-container {
   display: flex;
   flex-direction: column;
@@ -222,6 +224,12 @@ p {
     display: flex;
     flex-direction: column;
 
+  }
+}
+
+@media (max-width: 388px) {
+  .footer-map-locator iframe {
+    width: 270px;
   }
 }
 </style>

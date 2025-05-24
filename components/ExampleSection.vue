@@ -33,8 +33,7 @@ h1, h3 {
   font-family: 'Inter', sans-serif;
   background-color: #6DA48F80;
   color: #25424C;
-  padding: 5% 5%;
-  margin-bottom: 5%;
+  padding: 5% 5%; 
   gap: 2rem;
   display: flex;
   flex-direction: column;
@@ -71,7 +70,7 @@ import bureaux from "@/assets/images/ex-img-4.png";
 const imageWidth = ref('60vh')
 
 const updateImageWidth = () => {
-  imageWidth.value = window.innerWidth < 600 ? '30vh' : '60vh'
+  imageWidth.value = window.innerWidth < 600 ? '40vh' : '60vh'
 }
 
 onMounted(() => {
