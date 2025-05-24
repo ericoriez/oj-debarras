@@ -51,7 +51,7 @@
         <div class="footer-signature-container">
           <p>&copy; 2025 OJ Débarras – Tous droits réservés</p>
           <p>Réalisation :
-            <a href="https://cv-rod.vercel.app/" target="_blank" rel="noopener noreferrer">R.Delory  </a>
+            <a href="https://cv-rod-fr.vercel.app/" target="_blank" rel="noopener noreferrer">R.Delory  </a>
             <span class="separator">|</span>
             <a href="https://www.linkedin.com/in/eric-oriez/" target="_blank" rel="noopener noreferrer">  E.Oriez</a>
           </p>
