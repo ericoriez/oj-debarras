@@ -61,10 +61,10 @@ h1, h3 {
 <script setup >
 import BaseCard from "~/components/BaseCard.vue";
 
-import maison from "@/assets/images/ex-img-1.png";
-import appartement from "@/assets/images/ex-img-2.png";
-import locaux from "@/assets/images/ex-img-3.png";
-import bureaux from "@/assets/images/ex-img-4.png";
+import maison from "@/assets/images/avant1.jpg";
+import appartement from "@/assets/images/apres1.jpg";
+import locaux from "@/assets/images/avant2.jpg";
+import bureaux from "@/assets/images/apres2.jpg";
 
 
 const imageWidth = ref('60vh')

@@ -14,21 +14,21 @@ import {Map} from 'lucide-vue-next';
             color="#ff4444"
             :size="20"
         />
-        <a href="mailto:o-jdebarras@hotmail.fr">o-jdebarras@hotmail.fr</a>
+        <a href="mailto:contact.ojdebarras@gmail.com">contact.ojdebarras@gmail.com</a>
       </div>
       <div class="header-cta-band-contact-phone">
         <PhoneOutgoing
             color="#ff4444"
             :size="20"
         />
-        <a href="tel:0623881877">Tel: 06 23 88 18 77</a>
+        <a href="tel:0622822791">Tel: 06 22 82 27 91</a>
       </div>
       <div class="header-cta-band-contact-locator">
         <Map
             color="#ff4444"
             :size="20"
         />
-        <p>Haute Savoie | Savoie | Ain | Geneve</p>
+        <p>Haute Savoie | Savoie | Ain | Isère</p>
       </div>
     </div>
     <div class="header-cta-band-button-container">

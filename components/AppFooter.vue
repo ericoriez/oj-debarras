@@ -12,8 +12,8 @@
             Annecy<br />
           </p>
           <div class="footer-info-contact">
-            <a href="tel:0623881877">Tel: 06 23 88 18 77</a>
-            <a href="mailto:o-jdebarras@hotmail.fr">o-jdebarras@hotmail.fr</a>
+            <a href="tel:0622822791">Tel: 06 22 82 27 91</a>
+            <a href="mailto:contact.ojdebarras@gmail.com">contact.ojdebarras@gmail.com</a>
           </div>
         </div>
       </div>
@@ -26,11 +26,7 @@
       <div>
         <h4>Lieux Intervention</h4>
         <div class="localite-container">
-          <p>
-            Savoie <br />
-            Haute-Savoie <br />
-            Ain<br />
-          </p>
+            <p> Haute-Savoie | Savoie | Ain | Isère</p>
           <div class="footer-map-locator">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79466.86673854114!2d6.125715272665547!3d45.88285895235016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b8ffa1c0551c9%3A0x42781681620534ba!2sAnnecy!5e1!3m2!1sfr!2sfr!4v1747913175002!5m2!1sfr!2sfr"
@@ -223,6 +219,14 @@ p {
   .footer-signature-container {
     display: flex;
     flex-direction: column;
+
+  }
+}
+
+@media (max-width: 450px) {
+  .footer-info-contact>a {
+
+    font-size: 1.1rem;
 
   }
 }

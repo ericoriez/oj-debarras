@@ -20,7 +20,7 @@
         <PhoneOutgoing
             :size="20"
         />
-        <a href="tel:0623881877">Tel: 06 23 88 18 77</a>
+        <a href="tel:0622822791">Tel: 06 22 82 27 91</a>
       </button>
 
     </div>

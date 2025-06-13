@@ -15,8 +15,7 @@
     <div class="intro-section">
       <h2>Zone D'Intervention</h2>
       <p>
-        Située au cœur du bassin annécien, nous intervenons dans une large zone allant de l'<strong>Ain</strong> jusqu'à
-        <strong>Genève</strong>, en passant
+        Située au cœur du bassin annécien, nous intervenons dans une large zone allant de l'<strong>Ain</strong> jusqu'à l'<strong>Isère</strong> en passant
         par toute la <strong>Savoie</strong> et la <strong>Haute-Savoie</strong>.<br>
       </p>
     </div>
